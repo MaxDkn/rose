@@ -68,7 +68,7 @@ export default function Home() {
     }, []);
 
     return (
-        <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
+        <main className="relative flex h-dvh flex-col items-center justify-center overflow-hidden">
             <div
                 ref={fireworksRef}
                 className="absolute inset-0 z-0 pointer-events-none"
@@ -110,7 +110,7 @@ export default function Home() {
                 </AnimatePresence>
             </div>
 
-            <footer className="absolute bottom-4 z-10 text-pink-900 font-medium">
+            <footer className="absolute bottom-4 z-10 text-pink-900 font-medium pb-[env(safe-area-inset-bottom)]">
                 (C&apos;est pour tes 18 ans)
             </footer>
         </main>
